@@ -259,6 +259,7 @@ function m_page7(){
 }
 
 function m_page8(){
+
     gsap.from(".m-page8 .heading h2",{
         y:"100%",
         duration:0.5,
@@ -282,30 +283,29 @@ function m_page8(){
            
         }
     });
-    footertl = gsap.timeline({
-        scrollTrigger:{
-            trigger:".m-page8",
-            start:"80% top",
-            end:"bottom top",
-            scrub:3,
-        }
-    })
-    footertl.to(".m-imgfooterbox",{
-        '--footerclip1':"58%",
-        '--footerclip2':"58%",
-        '--footerclip3':"42%",
-        '--footerclip4':"42%",
-        duration:0.3,
-    },"d")
-    footertl.to(".m-imgfooterbox img",{
-        scale:"1.5",
-        duration:0.3,
-    },"d")
-    
+
     
 }
 
-
+footertl = gsap.timeline({
+    scrollTrigger:{
+        trigger:".m-page8",
+        start:"80% top",
+        end:"bottom top",
+        scrub:3,
+    }
+});
+footertl.to(".m-imgfooterbox",{
+    '--footerclip1':"58%",
+    '--footerclip2':"58%",
+    '--footerclip3':"42%",
+    '--footerclip4':"42%",
+    duration:0.3,
+},"d")
+footertl.to(".m-imgfooterbox img",{
+    scale:"1.5",
+    duration:0.3,
+},"d")
 
 
 locomotiveScrollf()
@@ -317,3 +317,4 @@ m_page5()
 m_page6()
 m_page7()
 m_page8()
+footerImg()
