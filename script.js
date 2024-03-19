@@ -311,7 +311,7 @@ footertl.to(".m-imgfooterbox img",{
 
 locomotiveScrollf()
 mouseFollower()
-// // preloader()
+preloader()
 m_page1()
 m_page2()
 m_page5()
